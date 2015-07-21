@@ -2,9 +2,10 @@
   "name": "nodejs-api-cors",
   "version": "0.1.0",
   "description": "nodejs middleware for cors header with http api (REST)",
-  "main": "src/index.js",
+  "main": "lib/cors.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -u bdd -R spec -t 500 --recursive",
+		"watch": "mocha -u bdd -R spec -t 500 --recursive --watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/aeisolution/nodejs-api-cors/issues"
   },
-  "homepage": "https://github.com/aeisolution/nodejs-api-cors#readme"
+  "engines": {
+    "node": ">= 0.12.0"
+  },	
+  "homepage": "https://github.com/aeisolution/nodejs-api-cors#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
 }
