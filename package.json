@@ -15,7 +15,7 @@
     "middleware",
     "cors"
   ],
-  "author": "aeisolution <info@aeisolution.it> (=)",
+  "author": "aeisolution <info@aeisolution.it>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aeisolution/nodejs-api-cors/issues"
